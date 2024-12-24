@@ -1,0 +1,35 @@
+<div class="auth">
+    <div class="login__container">
+        <div class="auth__header">
+            <h1 class="auth__title">Login</h1>
+        </div>
+        <form class="auth__form" id="login_form" method="POST">
+            <div class="auth__form-group">
+                <label for="username" class="auth__label">Username</label>
+                <input type="text" name="username" class="auth__input" required>
+                <label for="password" class="auth__label">Password</label>
+                <input type="password"  name="password" class="auth__input" required>
+                <input type="submit" value="Login" class="auth__submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="signup">
+        <div class="auth_header">
+            <h1 class="auth__title">Sign Up</h1>
+        </div>
+        <form class="auth__form" id="signup_form" method="POST">
+            <div class="auth__form-group">
+                <label for="username" class="auth__label">Username</label>
+                <input type="text" id="username" name="username" class="auth__input" required>
+                <label for="password" class="auth__label">Password</label>
+                <input type="password" id="password" name="password" class="auth__input" required>
+                <input type="submit" value="Sign Up" class="auth__submit">
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+<script src="/js/auth.js"></script>
