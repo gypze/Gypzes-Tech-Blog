@@ -1,0 +1,55 @@
+{{!-- show post details --}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{title}}</h1>
+            <p>{{content}}</p>
+            <p>Written by: {{user.username}}</p>
+            <p>Created on: {{format_date createdAt}}</p>
+        </div>
+    </div>
+
+    {{!-- show comment form --}}
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Comments</h2>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    {{!-- show comments --}}
+    <div class="row">
+        <div class="col-md-12">
+            {{#if comments}}
+            {{#each comments}}
+            <div class="card my-2">
+                <div class="card-body">
+                    <p>{{comment}}</p>
+                    <p>Written by: {{user.username}}</p>
+                    <p>Created on: {{format_date createdAt}}</p>
+                    {{!-- delete button --}}
+                    {{#if (eq user.id userId)}}
+                    <button class="btn btn-danger delete-comment" data-commentid="{{id}}">Delete</button>
+                    {{/if}}
+                </div>
+            </div>
+            {{/each}}
+            {{else}}
+            <p>No comments yet.</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
+
+<script>
+    const postId = "{{id}}";
+    const userId = "{{user.id}}";
+</script>
+
+<script src="/js/comment.js"></script>

@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User, Comment,Post } = require('../models');
-const withAuth = require('../utils/auth');
+const {withAuth} = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
@@ -60,7 +60,8 @@ router.get('/login', (req, res) => {
 }
 );
 
-// Use withAuth middleware to prevent access to route
+// New post route
+
 
 
 module.exports = router;
