@@ -1,0 +1,210 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  gainsboro;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(40deg,  rgb(145, 20, 199), indigo, rgb(78, 4, 78));
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+}
+
+
+
+header h1 {
+    color: #fff;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color:  white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Login and Signup styles */
+.auth {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth__title {
+    color: purple;
+    font-size: 2em;
+}
+
+.auth__form-group {
+    margin-bottom: 15px;
+}
+
+.auth__label {
+    display: block;
+    margin-bottom: 5px;
+    color: turquoise;
+}
+
+.auth__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth__submit {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth__submit:hover {
+    background-color: turquoise;
+}
+
+
+/* Logout button styles */
+#logout {
+    background-color: turquoise;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout:hover {
+    background-color: purple;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(14, 1, 1, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* Create Post Button */
+.create-post-btn {
+    background-color: lawngreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.create-post-btn:hover {
+    background-color: #40e0d0;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: hotpink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #ff69b4;
+
+
+}
+
+/* Edit Button with Rainbow Color */
+.edit-btn {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+}
+
+.edit-btn:hover {
+    background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 400% 400%;
+    animation: rainbow 5s ease infinite;
+}
+
+
+/* Submit Comment Button */
+.submit-comment {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-comment:hover {
+    background-color: darkpurple;
+}
+
+/* Delete Comment Button */
+.delete-comment {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-comment:hover {
+    background-color: darkpurple;
+}
