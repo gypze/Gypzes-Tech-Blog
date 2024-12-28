@@ -52,7 +52,7 @@ Hi there! I'm Gypze, a junior developer who is passionate about learning and gro
   
 ## Links
 
-- **Live Demo**: [Gypze's Tech Blog](https://gypzes-tech-blog.onrender.com)  
+- **Live Demo**: [Gypze's Tech Blog](https://gypzes-tech-blog.onrender.com) 
 - **GitHub Repository**: [Gypze's Tech Blog Repo](https://github.com/gypze/Gypzes-Tech-Blog.git)
 
 ## License
